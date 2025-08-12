@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://byaai03am4ecg"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_7ur0t"]
+distance = 14.0
+
+[node name="InvincibleWall" type="StaticBody2D"]
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("WorldBoundaryShape2D_7ur0t")

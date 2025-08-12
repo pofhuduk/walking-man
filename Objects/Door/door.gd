@@ -1,7 +1,7 @@
 extends Area2D
 
 signal door_used
-@export var room: PackedScene
+@export_file("*.tscn") var room: String
 @export var door: String
 var body
 

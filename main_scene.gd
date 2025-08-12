@@ -1,6 +1,6 @@
 extends Node
 
-@export var start_room: PackedScene
+@export_file("*.tscn") var start_room: String
 @export var spawnpoint: String
 @onready var room_manager: Node = $RoomManager
 @onready var player: CharacterBody2D = $Player

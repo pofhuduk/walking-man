@@ -10,6 +10,7 @@ size = Vector2(30.375, 58)
 collision_layer = 4
 collision_mask = 2
 script = ExtResource("1_xnqow")
+room = "2"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(28, 51)

@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://d110ylwx2sklr"]
+
+[ext_resource type="Script" uid="uid://rwkwfqtsx05b" path="res://Dialogue/dialogue_manager.gd" id="1_k6lpl"]
+
+[node name="DialogueManager" type="Node"]
+script = ExtResource("1_k6lpl")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Control"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Control"]
+offset_right = 40.0
+offset_bottom = 23.0

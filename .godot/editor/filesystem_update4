@@ -1,2 +1,14 @@
+res://Objects/Areas/room_area.tscn
+res://Objects/Areas/room_area.gd
 res://Objects/Door/door.tscn
 res://Player/player.tscn
+res://Rooms/room_1.tscn
+res://Rooms/room_2.tscn
+res://main_scene.tscn
+res://Objects/invincible_wall.tscn
+res://Areas/room_area.tscn
+res://Areas/dialogue_area.tscn
+res://Areas/dialogue_area.gd
+res://Player/player.gd
+res://Dialogue/dialogue_manager.gd
+res://dialogue_manager.tscn
