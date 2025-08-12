@@ -1,8 +1,9 @@
+Node
+CanvasLayer
 Control
 Container
 Label
 NinePatchRect
-Node
 CollisionShape2D
 Area2D
 StaticBody2D
@@ -11,4 +12,3 @@ Sprite2D
 Camera2D
 AnimatedSprite2D
 CharacterBody2D
-TileMapLayer

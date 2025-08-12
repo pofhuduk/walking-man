@@ -1,20 +1,39 @@
-[gd_scene load_steps=2 format=3 uid="uid://d110ylwx2sklr"]
+[gd_scene load_steps=4 format=3 uid="uid://d110ylwx2sklr"]
 
 [ext_resource type="Script" uid="uid://rwkwfqtsx05b" path="res://Dialogue/dialogue_manager.gd" id="1_k6lpl"]
+[ext_resource type="Texture2D" uid="uid://qkrxa3cao5x1" path="res://Dialogue/dialogue_box.png" id="2_cx3ll"]
+[ext_resource type="FontFile" uid="uid://dopbjr7iccyb3" path="res://Assets/Fonts/m5x7.ttf" id="3_d8etn"]
 
-[node name="DialogueManager" type="Node"]
+[node name="DialogueManager" type="CanvasLayer"]
 script = ExtResource("1_k6lpl")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
-anchors_preset = 0
+anchor_left = 0.5
+anchor_top = 0.75
+anchor_right = 0.5
+anchor_bottom = 0.75
 offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="NinePatchRect" type="NinePatchRect" parent="Control"]
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+offset_left = -314.0
+offset_right = 338.0
+offset_bottom = 124.0
+texture = ExtResource("2_cx3ll")
 
 [node name="Label" type="Label" parent="Control"]
-offset_right = 40.0
-offset_bottom = 23.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 7.25
+anchor_top = 1.0
+anchor_right = 7.25
+anchor_bottom = 1.0
+offset_left = -572.0
+offset_top = -26.0
+offset_right = 19.0
+offset_bottom = 70.0
+theme_override_fonts/font = ExtResource("3_d8etn")
+theme_override_font_sizes/font_size = 32
+autowrap_mode = 3

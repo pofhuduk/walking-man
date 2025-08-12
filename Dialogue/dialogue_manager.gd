@@ -11,14 +11,15 @@ var lines
 
 func _ready() -> void:
 	label.text = 'Textbox is ready.'
-	dialogue_box.hide
+	dialogue_box.hide()
 	
 func main(lines):
 	if not lines:
 		clear_dialogue()
 		return
 	if current_line_index == 0:
-		self.lines == lines
+		self.lines = lines
+		start_dialogue()
 	else:
 		if current_line_index >= len(lines):
 			clear_dialogue()
@@ -29,7 +30,7 @@ func main(lines):
 
 func start_dialogue():
 	show_line()
-	dialogue_box.show
+	dialogue_box.show()
 	dialogue_started.emit()
 	
 func show_line():

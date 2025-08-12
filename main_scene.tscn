@@ -7,8 +7,8 @@
 
 [node name="MainScene" type="Node"]
 script = ExtResource("1_d5x1h")
-start_room = "uid://mtrde0b7rhce"
-spawnpoint = "Door"
+start_room = "uid://dpaty41nxnqxq"
+spawnpoint = "LeftDoor"
 
 [node name="RoomManager" type="Node" parent="."]
 script = ExtResource("1_gyfs4")
