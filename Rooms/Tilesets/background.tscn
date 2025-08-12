@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5vnt2hryqh87"]
+
+[ext_resource type="Texture2D" uid="uid://bscbcagi43xpy" path="res://Rooms/Tilesets/bg_sheet.png" id="1_e688k"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3pxk4"]
+texture = ExtResource("1_e688k")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_2miur"]
+sources/0 = SubResource("TileSetAtlasSource_3pxk4")
+
+[node name="Background" type="TileMapLayer"]
+tile_set = SubResource("TileSet_2miur")

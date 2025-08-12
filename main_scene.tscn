@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkb52gsq34xwk"]
+
+[ext_resource type="Script" uid="uid://csvjllsd1pk00" path="res://main_scene.gd" id="1_d5x1h"]
+[ext_resource type="Script" uid="uid://cmj1af8fnrwd3" path="res://Rooms/room_manager.gd" id="1_gyfs4"]
+[ext_resource type="PackedScene" uid="uid://bxfnef2qvp7um" path="res://Rooms/room_2.tscn" id="2_d5x1h"]
+[ext_resource type="PackedScene" uid="uid://dctlw8mcheowv" path="res://Player/player.tscn" id="2_gyfs4"]
+
+[node name="MainScene" type="Node"]
+script = ExtResource("1_d5x1h")
+start_room = ExtResource("2_d5x1h")
+spawnpoint = "Door"
+
+[node name="RoomManager" type="Node" parent="."]
+script = ExtResource("1_gyfs4")
+
+[node name="Player" parent="." instance=ExtResource("2_gyfs4")]
+z_index = 15
+position = Vector2(336, 234)

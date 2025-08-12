@@ -1,0 +1,10 @@
+Marker2D
+Sprite2D
+Node
+CollisionShape2D
+Area2D
+Label
+Camera2D
+AnimatedSprite2D
+CharacterBody2D
+TileMapLayer
