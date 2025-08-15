@@ -1,14 +1,14 @@
 [gd_scene load_steps=5 format=3 uid="uid://dkb52gsq34xwk"]
 
 [ext_resource type="Script" uid="uid://csvjllsd1pk00" path="res://main_scene.gd" id="1_d5x1h"]
-[ext_resource type="Script" uid="uid://cmj1af8fnrwd3" path="res://Rooms/room_manager.gd" id="1_gyfs4"]
+[ext_resource type="Script" uid="uid://cmj1af8fnrwd3" path="res://Scripts/room_manager.gd" id="1_gyfs4"]
 [ext_resource type="PackedScene" uid="uid://dctlw8mcheowv" path="res://Player/player.tscn" id="2_gyfs4"]
 [ext_resource type="PackedScene" uid="uid://d110ylwx2sklr" path="res://Dialogue/dialogue_manager.tscn" id="4_d5x1h"]
 
 [node name="MainScene" type="Node"]
 script = ExtResource("1_d5x1h")
-start_room = "uid://dpaty41nxnqxq"
-spawnpoint = "LeftDoor"
+start_room = "uid://ddsxqvahmk4wq"
+target_door = "BedroomDoor"
 
 [node name="RoomManager" type="Node" parent="."]
 script = ExtResource("1_gyfs4")

@@ -1,0 +1,58 @@
+{   
+	"bookshelf_hallway": {
+		"default": [{
+			"conditions":{},
+			"dialogue":[
+			"A bookshelf filled with books.",
+			"All of her favorites. Crime fiction, sci-fi and romance novels...",
+			"And yours... some engineering textbooks from your collage years.",
+			"None of them attracts you now."]   
+		}]
+
+	},
+
+	"clock_hallway": {
+		"default": [{
+			"conditions":{},
+			"dialogue":[
+				"AAAAAAAAAA",
+				"This is test message"
+			]
+		}]
+	},
+		"bed_bedroom": {
+		"default": [{
+			"conditions":{},
+			"dialogue":[
+				"This is your favorite bed."
+			]
+		}]
+	},
+	
+			"door_locked": {
+		"default": [{
+			"conditions":{},
+			"dialogue":[
+				"Locked."
+			]
+		}]
+	},
+	
+			"door_opened": {
+		"default": [{
+			"conditions":{},
+			"dialogue":[
+				"Kapiyi actin."
+			]
+		}]
+	},
+			"test": {
+		"default": [{
+			"conditions":{},
+			"dialogue":[
+				"Anahtari yerden aldin.",
+				"Guzel hissettirdi."
+			]
+		}]
+	}
+}

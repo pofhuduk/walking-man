@@ -1,3 +1,4 @@
+res://Objects/Door/door.tscn
+res://Dialogue/dialogue_manager.tscn
 res://Rooms/rm_hall.tscn
-res://main_scene.tscn
-res://Door/door.tscn
+res://Areas/event_area.tscn

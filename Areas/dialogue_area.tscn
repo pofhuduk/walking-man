@@ -14,6 +14,7 @@ script = ExtResource("1_m7sao")
 position = Vector2(28.5, 72)
 scale = Vector2(2, 1)
 shape = SubResource("RectangleShape2D_ybyms")
+debug_color = Color(0.612534, 0.533128, 0.203599, 0.42)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

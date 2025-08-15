@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bscbcagi43xpy"
-path="res://.godot/imported/bg_sheet.png-e9b0b15f8df394a8d8a2c5bf6ed376e0.ctex"
+path="res://.godot/imported/bg_sheet.png-708e732c1e7122a50dd847ffb7153fa4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Rooms/Tilesets/bg_sheet.png"
-dest_files=["res://.godot/imported/bg_sheet.png-e9b0b15f8df394a8d8a2c5bf6ed376e0.ctex"]
+source_file="res://Tilesets/bg_sheet.png"
+dest_files=["res://.godot/imported/bg_sheet.png-708e732c1e7122a50dd847ffb7153fa4.ctex"]
 
 [params]
 

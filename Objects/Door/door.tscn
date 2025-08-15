@@ -1,0 +1,58 @@
+[gd_scene load_steps=8 format=3 uid="uid://bfl6srdcgct1d"]
+
+[ext_resource type="Texture2D" uid="uid://cqwbsjekyqyhr" path="res://Objects/Door/door.png" id="1_un1rp"]
+[ext_resource type="Script" uid="uid://bpxc164trbbgg" path="res://Objects/Door/door.gd" id="1_xnqow"]
+[ext_resource type="Texture2D" uid="uid://d36keuin1gn1k" path="res://Assets/Sprites/arrow.png" id="3_cai5j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cktcr"]
+size = Vector2(31, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3i6g3"]
+atlas = ExtResource("3_cai5j")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6t52j"]
+atlas = ExtResource("3_cai5j")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6y22i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3i6g3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6t52j")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Door" type="Area2D" groups=["door"]]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_xnqow")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 1
+position = Vector2(0.5, 11)
+shape = SubResource("RectangleShape2D_cktcr")
+debug_color = Color(0.907327, 0.119732, 0.677588, 0.42)
+
+[node name="DoorSprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_un1rp")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(1, 19)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
+z_index = 2
+position = Vector2(0, -18)
+sprite_frames = SubResource("SpriteFrames_6y22i")
+autoplay = "default"
+speed_scale = 0.5
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

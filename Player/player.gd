@@ -5,8 +5,9 @@ extends CharacterBody2D
 @onready var camera: Camera2D = $Camera2D
 
 const IDLE_THRESHOLD = 5.0
-var current_interactable = null
+var current_dialogue = null
 var current_door = null
+var current_event_area = null
 var can_move = true
 
 func _ready() -> void:
@@ -15,13 +16,15 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("interact"):
-		if current_door:
-			current_door.send_info()
-		if current_interactable and len(current_interactable.dialogue_lines) != 0:
-			DialogueManager.main(current_interactable.dialogue_lines)
+		if current_event_area:
+			current_event_area.interact(self)
+		elif current_door:
+			current_door.interact(self)
+		elif current_dialogue:
+			current_dialogue.interact(self)
 		else:
 			DialogueManager.clear_dialogue()
-			
+	
 func _physics_process(delta: float) -> void:
 	if not can_move:
 		velocity.x = 0
